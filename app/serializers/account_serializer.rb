@@ -1,0 +1,10 @@
+class AccountSerializer
+    include JSONAPI::Serializer
+  #sets the type of serializer
+  set_type :account
+  #The attributes needed in response
+  attributes :category
+
+  belongs_to :contact
+
+end
